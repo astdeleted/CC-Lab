@@ -23,9 +23,6 @@ function setup() {
     by = height / 2;
     targetX = random(0, width);
     targetY = random(150, height);
-    for (let i = 0; i < 100; i++) {
-
-    }
 }
 
 function draw() {
@@ -77,9 +74,9 @@ function draw() {
         bx = lerp(bx, targetX, 0.01);
         by = lerp(by, targetY, 0.01);
     }
-    if (frameCount % 100 == 29) {
+    if (frameCount % 30 == 29) {
         targetX = random(0, width);
-        targetY = random(175, height);
+        targetY = random(190, height);
     }
 }
 
@@ -162,7 +159,7 @@ function blob(bx, by) {
         let h2 = map(noise(0, 100, frameCount / 200), -1, 1, 0, 360)
         let s = random(50, 100);
         let b = random(50, 100);
-        rotate(radians(frameCount * 10));
+        rotate(radians(frameCount * 20));
         fill(h, s, b);
         triangle(-75, 0, 0, -100, 75, 0);
         fill(h, s, b);
