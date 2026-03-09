@@ -127,20 +127,8 @@ function waves() {
     let x2 = map(cos(frameCount / 50 + 100), 0, 1, -30, 500);
     let x3 = map(sin(cos(frameCount / 50 + 100)), 0, 1, -30, 500);
     let x4 = map(cos(sin(frameCount / 50 + 100)), 0, 1, -30, 500);
-    /*circle(x + 375, y, 50);
-    circle(x2 + 250, y, 50);
-    circle(x3, y, 50);
-    circle(x4 - 100, y, 50);*/
-    //y = y + map(mouseY,0, height, -20, 20);
-    y = y - ySpeed;
-    if (frameCount % 100 == 20) {
-        ySpeed = random(1, 20);
-    }
-    if (y < 0) {
-        x = random(0, 800);
-        y = 550;
-    }
 }
+
 function blob(bx, by) {
     push();
     translate(bx, by);
