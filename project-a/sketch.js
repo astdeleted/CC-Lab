@@ -123,10 +123,6 @@ function waves() {
 
     noFill();
     stroke(255);
-    let x = map(sin(frameCount / 50), -1, 1, -30, 430);
-    let x2 = map(cos(frameCount / 50 + 100), 0, 1, -30, 500);
-    let x3 = map(sin(cos(frameCount / 50 + 100)), 0, 1, -30, 500);
-    let x4 = map(cos(sin(frameCount / 50 + 100)), 0, 1, -30, 500);
 }
 
 function blob(bx, by) {
