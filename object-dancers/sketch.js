@@ -67,7 +67,6 @@ class tubeDancer {
     fill('red');
     rotate(PI + armSwing);
     rect(this.x - 815, this.y - 475, 50, 10);
-    rotate(PI + armSwing);
     pop();
 
     push();
